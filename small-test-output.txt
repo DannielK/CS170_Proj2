@@ -11,207 +11,216 @@ Enter a list of features separated by commas:
 
 3,5,7
 
-Min and max values found in: 0.0010004043579101562 seconds
+Means:
+Feature 3 : 2.9314086655000007
+Feature 5 : 3.067106223400001
+Feature 7 : 3.1303552965
+Standard Deviations:
+Feature 3 : 1.0759671797627193
+Feature 5 : 1.0377311595211716
+Feature 7 : 0.9603240069713268
+
+Mean and standard deviation values found in: 0.0010001659393310547 seconds
 Data read and normalized in: 0.0 seconds
 Training and testing instance 0 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 26 with a distance of: 0.13998502440084806.
+	The closest instance was: 26 with a distance of: 0.7379741835321434.
 Training and testing instance 1 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 31 with a distance of: 0.07677462615723536.
+	The closest instance was: 31 with a distance of: 0.39767122959227896.
 Training and testing instance 2 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 35 with a distance of: 0.05991352871796008.
-Training and testing instance 3 took: 0.0 seconds, and the prediction was: 1 which was incorrect.
-	The closest instance was: 66 with a distance of: 0.17482921977895544.
+	The closest instance was: 91 with a distance of: 0.3183020289403426.
+Training and testing instance 3 took: 0.0009999275207519531 seconds, and the prediction was: 1 which was incorrect.
+	The closest instance was: 66 with a distance of: 0.9121523521470098.
 Training and testing instance 4 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 62 with a distance of: 0.08258915587264493.
+	The closest instance was: 62 with a distance of: 0.452033458495638.
 Training and testing instance 5 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 60 with a distance of: 0.13614329919436266.
+	The closest instance was: 60 with a distance of: 0.6804295032991345.
 Training and testing instance 6 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 96 with a distance of: 0.1820320109147558.
-Training and testing instance 7 took: 0.0010001659393310547 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 47 with a distance of: 0.14492465762555867.
+	The closest instance was: 96 with a distance of: 0.9634179039788078.
+Training and testing instance 7 took: 0.0 seconds, and the prediction was: 2 which was correct.
+	The closest instance was: 47 with a distance of: 0.7362795347746752.
 Training and testing instance 8 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 42 with a distance of: 0.0551726380695355.
+	The closest instance was: 42 with a distance of: 0.287950599894776.
 Training and testing instance 9 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 94 with a distance of: 0.08901844832510158.
+	The closest instance was: 94 with a distance of: 0.4263224486748704.
 Training and testing instance 10 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 49 with a distance of: 0.10639323880426806.
+	The closest instance was: 49 with a distance of: 0.550654342808238.
 Training and testing instance 11 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 59 with a distance of: 0.3247409088852421.
+	The closest instance was: 59 with a distance of: 1.6817608181853405.
 Training and testing instance 12 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 81 with a distance of: 0.05892073389004428.
+	The closest instance was: 81 with a distance of: 0.3122884488920245.
 Training and testing instance 13 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 64 with a distance of: 0.03517623613019634.
+	The closest instance was: 64 with a distance of: 0.17880424662038663.
 Training and testing instance 14 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 33 with a distance of: 0.1612478293237507.
+	The closest instance was: 33 with a distance of: 0.8001587886677383.
 Training and testing instance 15 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 48 with a distance of: 0.13158918308716278.
+	The closest instance was: 48 with a distance of: 0.6392898201964581.
 Training and testing instance 16 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 38 with a distance of: 0.09080199406645971.
+	The closest instance was: 38 with a distance of: 0.4676774906873632.
 Training and testing instance 17 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 73 with a distance of: 0.1991173955486175.
+	The closest instance was: 73 with a distance of: 0.982046695190185.
 Training and testing instance 18 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 68 with a distance of: 0.09808886008370105.
-Training and testing instance 19 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 61 with a distance of: 0.08114850740190771.
+	The closest instance was: 68 with a distance of: 0.47306844067629505.
+Training and testing instance 19 took: 0.0010004043579101562 seconds, and the prediction was: 2 which was correct.
+	The closest instance was: 61 with a distance of: 0.4341202859479331.
 Training and testing instance 20 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 85 with a distance of: 0.13684203047908564.
+	The closest instance was: 85 with a distance of: 0.7306426500230405.
 Training and testing instance 21 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 62 with a distance of: 0.08242214974675938.
+	The closest instance was: 62 with a distance of: 0.39545877138173136.
 Training and testing instance 22 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 25 with a distance of: 0.07100166094680302.
+	The closest instance was: 25 with a distance of: 0.3550040678278159.
 Training and testing instance 23 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 55 with a distance of: 0.09357569090955044.
+	The closest instance was: 57 with a distance of: 0.4869613543042976.
 Training and testing instance 24 took: 0.0 seconds, and the prediction was: 1 which was incorrect.
-	The closest instance was: 52 with a distance of: 0.08380067421839953.
+	The closest instance was: 52 with a distance of: 0.42787691147856644.
 Training and testing instance 25 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 65 with a distance of: 0.05224383090799548.
+	The closest instance was: 65 with a distance of: 0.2717802285861527.
 Training and testing instance 26 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 67 with a distance of: 0.04112299721881833.
+	The closest instance was: 67 with a distance of: 0.2089664523346162.
 Training and testing instance 27 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 30 with a distance of: 0.0626979344367105.
+	The closest instance was: 30 with a distance of: 0.34295236588044126.
 Training and testing instance 28 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 49 with a distance of: 0.11609389662884192.
+	The closest instance was: 49 with a distance of: 0.5932721365440659.
 Training and testing instance 29 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 90 with a distance of: 0.27513741423488963.
+	The closest instance was: 90 with a distance of: 1.4738031788833958.
 Training and testing instance 30 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 27 with a distance of: 0.0626979344367105.
+	The closest instance was: 27 with a distance of: 0.34295236588044126.
 Training and testing instance 31 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 1 with a distance of: 0.07677462615723536.
+	The closest instance was: 1 with a distance of: 0.39767122959227896.
 Training and testing instance 32 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 47 with a distance of: 0.1680525103282766.
+	The closest instance was: 47 with a distance of: 0.9167130957559343.
 Training and testing instance 33 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 14 with a distance of: 0.1612478293237507.
+	The closest instance was: 14 with a distance of: 0.8001587886677383.
 Training and testing instance 34 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 51 with a distance of: 0.09101184526902496.
-Training and testing instance 35 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 2 with a distance of: 0.05991352871796008.
+	The closest instance was: 51 with a distance of: 0.4396705251254706.
+Training and testing instance 35 took: 0.0010001659393310547 seconds, and the prediction was: 2 which was correct.
+	The closest instance was: 2 with a distance of: 0.3197667755358287.
 Training and testing instance 36 took: 0.0 seconds, and the prediction was: 1 which was incorrect.
-	The closest instance was: 34 with a distance of: 0.09136248609964165.
+	The closest instance was: 34 with a distance of: 0.48984730845630886.
 Training and testing instance 37 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 72 with a distance of: 0.11892095010597314.
+	The closest instance was: 72 with a distance of: 0.6241410470973726.
 Training and testing instance 38 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 89 with a distance of: 0.06678214961190074.
+	The closest instance was: 89 with a distance of: 0.36311187276627555.
 Training and testing instance 39 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 41 with a distance of: 0.09016614967727318.
+	The closest instance was: 41 with a distance of: 0.47090734883103474.
 Training and testing instance 40 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 86 with a distance of: 0.10541890214333427.
+	The closest instance was: 86 with a distance of: 0.537326364966362.
 Training and testing instance 41 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 39 with a distance of: 0.09016614967727318.
-Training and testing instance 42 took: 0.0010001659393310547 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 50 with a distance of: 0.04983139426555532.
+	The closest instance was: 39 with a distance of: 0.47090734883103474.
+Training and testing instance 42 took: 0.0 seconds, and the prediction was: 2 which was correct.
+	The closest instance was: 50 with a distance of: 0.25963135964158157.
 Training and testing instance 43 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 90 with a distance of: 0.09081961230045696.
+	The closest instance was: 90 with a distance of: 0.4803701060994977.
 Training and testing instance 44 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 93 with a distance of: 0.19589567897618979.
+	The closest instance was: 93 with a distance of: 1.0013051392124257.
 Training and testing instance 45 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 60 with a distance of: 0.10241939546118914.
+	The closest instance was: 60 with a distance of: 0.5433670407172637.
 Training and testing instance 46 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 87 with a distance of: 0.030001446860369586.
+	The closest instance was: 87 with a distance of: 0.154463711789014.
 Training and testing instance 47 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 98 with a distance of: 0.09292249021936494.
+	The closest instance was: 98 with a distance of: 0.4835946130294576.
 Training and testing instance 48 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 65 with a distance of: 0.06122470249566111.
+	The closest instance was: 65 with a distance of: 0.3099347216323773.
 Training and testing instance 49 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 70 with a distance of: 0.034662356703530336.
+	The closest instance was: 70 with a distance of: 0.17924497798396072.
 Training and testing instance 50 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 42 with a distance of: 0.04983139426555532.
+	The closest instance was: 42 with a distance of: 0.25963135964158157.
 Training and testing instance 51 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 69 with a distance of: 0.034400562195771096.
-Training and testing instance 52 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 46 with a distance of: 0.05473719315144159.
+	The closest instance was: 69 with a distance of: 0.16803928343042918.
+Training and testing instance 52 took: 0.0010004043579101562 seconds, and the prediction was: 1 which was correct.
+	The closest instance was: 46 with a distance of: 0.28472574234696635.
 Training and testing instance 53 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 94 with a distance of: 0.06042036930977952.
+	The closest instance was: 94 with a distance of: 0.2877451873244314.
 Training and testing instance 54 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 71 with a distance of: 0.10803122070033754.
-Training and testing instance 55 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 23 with a distance of: 0.09357569090955044.
+	The closest instance was: 71 with a distance of: 0.5883647402662479.
+Training and testing instance 55 took: 0.0 seconds, and the prediction was: 1 which was incorrect.
+	The closest instance was: 97 with a distance of: 0.475180907181251.
 Training and testing instance 56 took: 0.0 seconds, and the prediction was: 1 which was incorrect.
-	The closest instance was: 15 with a distance of: 0.14714705339691223.
+	The closest instance was: 15 with a distance of: 0.7739015769503498.
 Training and testing instance 57 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 76 with a distance of: 0.09648365967233717.
+	The closest instance was: 23 with a distance of: 0.4869613543042976.
 Training and testing instance 58 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 79 with a distance of: 0.08878766876869987.
-Training and testing instance 59 took: 0.0010001659393310547 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 54 with a distance of: 0.24827851658868327.
+	The closest instance was: 79 with a distance of: 0.4569019309476393.
+Training and testing instance 59 took: 0.0 seconds, and the prediction was: 2 which was correct.
+	The closest instance was: 54 with a distance of: 1.3224555117983112.
 Training and testing instance 60 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 45 with a distance of: 0.10241939546118914.
+	The closest instance was: 45 with a distance of: 0.5433670407172637.
 Training and testing instance 61 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 99 with a distance of: 0.023512611641632333.
+	The closest instance was: 99 with a distance of: 0.1108957604161012.
 Training and testing instance 62 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 21 with a distance of: 0.08242214974675938.
+	The closest instance was: 21 with a distance of: 0.39545877138173136.
 Training and testing instance 63 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 91 with a distance of: 0.060038989893610985.
+	The closest instance was: 91 with a distance of: 0.287735300364871.
 Training and testing instance 64 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 13 with a distance of: 0.03517623613019634.
+	The closest instance was: 13 with a distance of: 0.17880424662038663.
 Training and testing instance 65 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 25 with a distance of: 0.05224383090799548.
+	The closest instance was: 25 with a distance of: 0.2717802285861527.
 Training and testing instance 66 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 34 with a distance of: 0.13074951152686315.
-Training and testing instance 67 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 26 with a distance of: 0.04112299721881833.
+	The closest instance was: 34 with a distance of: 0.6316099110969446.
+Training and testing instance 67 took: 0.0010006427764892578 seconds, and the prediction was: 2 which was correct.
+	The closest instance was: 26 with a distance of: 0.2089664523346162.
 Training and testing instance 68 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 18 with a distance of: 0.09808886008370105.
+	The closest instance was: 18 with a distance of: 0.47306844067629505.
 Training and testing instance 69 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 51 with a distance of: 0.034400562195771096.
+	The closest instance was: 51 with a distance of: 0.16803928343042918.
 Training and testing instance 70 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 49 with a distance of: 0.034662356703530336.
+	The closest instance was: 49 with a distance of: 0.17924497798396072.
 Training and testing instance 71 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 54 with a distance of: 0.10803122070033754.
+	The closest instance was: 54 with a distance of: 0.5883647402662479.
 Training and testing instance 72 took: 0.0 seconds, and the prediction was: 1 which was incorrect.
-	The closest instance was: 87 with a distance of: 0.1120606080462467.
+	The closest instance was: 87 with a distance of: 0.5382541966892646.
 Training and testing instance 73 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 99 with a distance of: 0.1226775005092502.
+	The closest instance was: 99 with a distance of: 0.6384878222879399.
 Training and testing instance 74 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 8 with a distance of: 0.12309761818981764.
+	The closest instance was: 8 with a distance of: 0.6248299309933386.
 Training and testing instance 75 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 33 with a distance of: 0.16140891143454267.
-Training and testing instance 76 took: 0.0010001659393310547 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 57 with a distance of: 0.09648365967233717.
+	The closest instance was: 33 with a distance of: 0.8048897600483665.
+Training and testing instance 76 took: 0.0 seconds, and the prediction was: 2 which was correct.
+	The closest instance was: 57 with a distance of: 0.524565576890437.
 Training and testing instance 77 took: 0.0 seconds, and the prediction was: 1 which was incorrect.
-	The closest instance was: 12 with a distance of: 0.12582393863151772.
+	The closest instance was: 12 with a distance of: 0.6538214231625499.
 Training and testing instance 78 took: 0.0 seconds, and the prediction was: 2 which was incorrect.
-	The closest instance was: 61 with a distance of: 0.06666374753571548.
+	The closest instance was: 61 with a distance of: 0.36067194431402205.
 Training and testing instance 79 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 58 with a distance of: 0.08878766876869987.
+	The closest instance was: 58 with a distance of: 0.4569019309476393.
 Training and testing instance 80 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 18 with a distance of: 0.11256698231993206.
+	The closest instance was: 18 with a distance of: 0.603422367499046.
 Training and testing instance 81 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 12 with a distance of: 0.05892073389004428.
+	The closest instance was: 12 with a distance of: 0.3122884488920245.
 Training and testing instance 82 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 21 with a distance of: 0.16458340161571558.
+	The closest instance was: 21 with a distance of: 0.8741233018657552.
 Training and testing instance 83 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 41 with a distance of: 0.22421824440141888.
-Training and testing instance 84 took: 0.0 seconds, and the prediction was: 2 which was incorrect.
-	The closest instance was: 95 with a distance of: 0.05689206201121805.
+	The closest instance was: 41 with a distance of: 1.1854952074118483.
+Training and testing instance 84 took: 0.00099945068359375 seconds, and the prediction was: 2 which was incorrect.
+	The closest instance was: 95 with a distance of: 0.29773598839951837.
 Training and testing instance 85 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 46 with a distance of: 0.11332422188154634.
+	The closest instance was: 46 with a distance of: 0.5405910704466039.
 Training and testing instance 86 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 40 with a distance of: 0.10541890214333427.
+	The closest instance was: 40 with a distance of: 0.537326364966362.
 Training and testing instance 87 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 46 with a distance of: 0.030001446860369586.
+	The closest instance was: 46 with a distance of: 0.154463711789014.
 Training and testing instance 88 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 12 with a distance of: 0.07956048010519962.
+	The closest instance was: 12 with a distance of: 0.4047841214111083.
 Training and testing instance 89 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 38 with a distance of: 0.06678214961190074.
+	The closest instance was: 38 with a distance of: 0.36311187276627555.
 Training and testing instance 90 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 43 with a distance of: 0.09081961230045696.
+	The closest instance was: 43 with a distance of: 0.4803701060994977.
 Training and testing instance 91 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 63 with a distance of: 0.060038989893610985.
+	The closest instance was: 63 with a distance of: 0.287735300364871.
 Training and testing instance 92 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 80 with a distance of: 0.21839630284867118.
-Training and testing instance 93 took: 0.001001119613647461 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 2 with a distance of: 0.06805468391462234.
+	The closest instance was: 80 with a distance of: 1.151140745891465.
+Training and testing instance 93 took: 0.0 seconds, and the prediction was: 2 which was correct.
+	The closest instance was: 2 with a distance of: 0.35530537043986576.
 Training and testing instance 94 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 53 with a distance of: 0.06042036930977952.
+	The closest instance was: 53 with a distance of: 0.2877451873244314.
 Training and testing instance 95 took: 0.0 seconds, and the prediction was: 1 which was incorrect.
-	The closest instance was: 84 with a distance of: 0.05689206201121805.
+	The closest instance was: 84 with a distance of: 0.29773598839951837.
 Training and testing instance 96 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 6 with a distance of: 0.1820320109147558.
-Training and testing instance 97 took: 0.0 seconds, and the prediction was: 1 which was correct.
-	The closest instance was: 65 with a distance of: 0.09000414888676131.
+	The closest instance was: 6 with a distance of: 0.9634179039788078.
+Training and testing instance 97 took: 0.0 seconds, and the prediction was: 2 which was incorrect.
+	The closest instance was: 55 with a distance of: 0.475180907181251.
 Training and testing instance 98 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 47 with a distance of: 0.09292249021936494.
+	The closest instance was: 47 with a distance of: 0.4835946130294576.
 Training and testing instance 99 took: 0.0 seconds, and the prediction was: 2 which was correct.
-	The closest instance was: 61 with a distance of: 0.023512611641632333.
-Accuracy: 91.0% using features: [3, 5, 7]
-Overall time taken: 0.007002353668212891 seconds
+	The closest instance was: 61 with a distance of: 0.1108957604161012.
+Accuracy: 0.89 using features: [3, 5, 7]
+Overall time taken: 0.007001161575317383 seconds

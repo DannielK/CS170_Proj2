@@ -28,22 +28,44 @@ features_list = [int(feature) for feature in input_str.split(',')]
 # read the dataset file, and return a dictionary with the class labels as keys and the instance's features as values
 def read_file(file_name, features_list):
     data_map = {}
-    min_values = [float('inf')] * len(features_list)
-    max_values = [float('-inf')] * len(features_list)
-
-    # find the min and max values for each feature
+    features_mean = [float('0')] * len(features_list)
+    features_std = [float('0')] * len(features_list)
+    num_instances = 0.0
+    mean_std_start_time = time.time()
+    # calculate the mean for the standard deviation of the features
     with open(file_name, 'r') as file:
-        min_max_start_time = time.time()
         for line in file:
             # split the line by spaces and get the features
             instance = line.strip().split()
             for i, feature in enumerate(features_list):
                 feature_value = float(instance[feature])
-                min_values[i] = min(min_values[i], feature_value)
-                max_values[i] = max(max_values[i], feature_value)
-        min_max_end_time = time.time()
-        min_max_time_taken = min_max_end_time - min_max_start_time
-        print("\nMin and max values found in: " + str(min_max_time_taken) + " seconds")
+                features_mean[i] += feature_value
+            num_instances += 1.0
+        # calculate the mean of the features
+        for i in range(len(features_mean)):
+            features_mean[i] /= num_instances
+        # print the means of all the features
+        print("Means:")
+        for i, feature in enumerate(features_list):
+            print("Feature", feature, ":", features_mean[i])
+    # calculate the standard deviation of the features
+    for i, feature in enumerate(features_list):
+        sum_squared_diff = [float('0')] * len(features_list)
+        diff = 0.0
+        with open(file_name, 'r') as file:
+            for line in file:
+                instance = line.strip().split()
+                feature_value = float(instance[feature])
+                diff = feature_value - features_mean[i]
+                sum_squared_diff[i] += diff ** 2
+        features_std[i] = (sum_squared_diff[i] / (num_instances - 1.0)) ** 0.5
+    # print the standard deviations of all the features
+    print("Standard Deviations:")
+    for i, feature in enumerate(features_list):
+        print("Feature", feature, ":", features_std[i])
+    mean_std_end_time = time.time()
+    mean_std_time_taken = mean_std_end_time - mean_std_start_time
+    print("\nMean and standard deviation values found in: " + str(mean_std_time_taken) + " seconds")
                 
     # read and normalize the data
     with open(file_name, 'r') as file:
@@ -60,7 +82,7 @@ def read_file(file_name, features_list):
             for i, feature in enumerate(features_list):
                 feature_value = float(instance[feature])
                 # normalize the feature value
-                normalized_value = (feature_value - min_values[i]) / (max_values[i] - min_values[i])
+                normalized_value = (feature_value - features_mean[i]) / features_std[i]
                 # add the normalized value to the tuple
                 instance_tuple += (normalized_value,)
             # add the tuple to the data map
@@ -77,13 +99,13 @@ def read_file(file_name, features_list):
 data_map = read_file(file_list[file_name], features_list)
 
 # perform leave one out validation
-result = leave_one_out_validator(data_map) * 100
+result = leave_one_out_validator(data_map)
 
 # record end time
 overall_end_time = time.time()
 
 # print the result
-print("Accuracy: " + str(result) + "%" + " using features: " + str(features_list))
+print("Accuracy: " + str(result) + " using features: " + str(features_list))
 
 # calculate and print the time taken
 overall_time_taken = overall_end_time - overall_start_time
