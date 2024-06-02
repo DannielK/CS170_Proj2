@@ -21,7 +21,5 @@ def leave_one_out_validator(data_map):
             correct_predictions += 1.0
         train_end_time = time.time()
         train_time_taken = train_end_time - train_start_time
-        print("Training and testing instance " + str(instance_index) + " took: " + str(train_time_taken) + " seconds, and the prediction was: " + str(prediction[0]) + " which was " + ("correct" if prediction[0] == test_instance[0] else "incorrect") + ".")
-        print("\tThe closest instance was: " + str(prediction[2]) + " with a distance of: " + str(prediction[1]) + ".")
     # Return the accuracy of the classifier
     return correct_predictions / float(len(data_map))

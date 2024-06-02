@@ -1,3 +1,9 @@
+# =============================================================================================================================
+# 
+# THIS IS THE MAIN FILE FOR ONLY PART 2 OF THE PROJECT, MEANING IT WILL ONLY RUN THE NN-CLASSIFIER AND LEAVE ONE OUT VALIDATOR
+# RUN THE MAIN FILE main.py FOR THE FULL PROJECT
+#
+# =============================================================================================================================
 import time
 from leave_one_out_validator import leave_one_out_validator
 

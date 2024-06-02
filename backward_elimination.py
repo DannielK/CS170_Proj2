@@ -7,7 +7,6 @@ def read_file(file_name, features_list):
     features_mean = [float('0')] * len(features_list)
     features_std = [float('0')] * len(features_list)
     num_instances = 0.0
-    # mean_std_start_time = time.time()
     # calculate the mean for the standard deviation of the features
     with open(file_name, 'r') as file:
         for line in file:
@@ -20,10 +19,6 @@ def read_file(file_name, features_list):
         # calculate the mean of the features
         for i in range(len(features_mean)):
             features_mean[i] /= num_instances
-        # print the means of all the features
-        #print("Means:")
-        #for i, feature in enumerate(features_list):
-            #print("Feature", feature, ":", features_mean[i])
     # calculate the standard deviation of the features
     for i, feature in enumerate(features_list):
         sum_squared_diff = [float('0')] * len(features_list)
@@ -35,17 +30,9 @@ def read_file(file_name, features_list):
                 diff = feature_value - features_mean[i]
                 sum_squared_diff[i] += diff ** 2
         features_std[i] = (sum_squared_diff[i] / (num_instances - 1.0)) ** 0.5
-    # print the standard deviations of all the features
-    #print("Standard Deviations:")
-    #for i, feature in enumerate(features_list):
-        #print("Feature", feature, ":", features_std[i])
-    # mean_std_end_time = time.time()
-    # mean_std_time_taken = mean_std_end_time - mean_std_start_time
-    # print("\nMean and standard deviation values found in: " + str(mean_std_time_taken) + " seconds")
                 
     # read and normalize the data
     with open(file_name, 'r') as file:
-        # read_start_time = time.time()
         instance_index = 0
         for line in file:
             # split the line by spaces and get the features
@@ -65,9 +52,6 @@ def read_file(file_name, features_list):
             data_map[instance_index] = instance_tuple
             # increment the instance index
             instance_index += 1
-        #read_end_time = time.time()
-        #read_time_taken = read_end_time - read_start_time
-        #print("Data read and normalized in: " + str(read_time_taken) + " seconds")
     # {instance_index: [class_lable, feature1, feature2, ...]}
     return data_map
 
@@ -94,11 +78,8 @@ def backward_elimination(prob: Problem, filename):
         best_subset = ()
         for subset in prob.set_accuracy_map:
             if prob.set_accuracy_map[subset] > highest_score:
-                #print("found higher score\n")
                 highest_score = prob.set_accuracy_map[subset]
                 best_subset = subset
-        
-        #print("Subset to remove is: " + str(best_subset) + "\n")
 
         # Find feature to remove
         chosen_feature = 0
@@ -106,7 +87,6 @@ def backward_elimination(prob: Problem, filename):
             if not (feature in best_subset):
                 chosen_feature = feature
 
-        #print("Chosen feature to remove is: " + str(chosen_feature) + "\n")
         #Select feature
         prob.select_feature(best_subset, chosen_feature, "backward")
     
