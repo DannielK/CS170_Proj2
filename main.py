@@ -35,7 +35,7 @@ problem = Problem(feature_num)
 
 solution = algo_functions[chosen_alg](problem)
 
-if random_accuracy > solution[1]:
+if random_accuracy > 100*solution[1]:
     print("Initial random accuracy: " + str(random_accuracy) + "was higher than the algorithm's solution: " + "{}".format(solution[0]) + ", which has an accuracy of " + str(solution[1]) + "%")
 else:
-    print("Finished search!! The best feature subset is " + "{}".format(solution[0]) + ", which has an accuracy of " + str(solution[1]) + "%")
+    print("Finished search!! The best feature subset is " + "{}".format(solution[0]) + ", which has an accuracy of " + str(100*solution[1]) + "%")

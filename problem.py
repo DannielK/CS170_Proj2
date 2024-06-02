@@ -30,7 +30,7 @@ class Problem:
         self.chosen_features = self.chosen_features + (chosen_feature, ) if algo == "Forward" else tuple(x for x in self.chosen_features if x!= chosen_feature)
         # Print out the trace step
         for subset in self.set_accuracy_map:
-            print("\tUsing feature(s) " + "{}".format(subset) + " accuracy is " + str(self.set_accuracy_map[subset]) + "%\n")
-        print("Feature set " + "{}".format(best_set) + " was best, accuracy is " + str(self.set_accuracy_map[best_set]) + "%\n\n")
+            print("\tUsing feature(s) " + "{}".format(subset) + " accuracy is " + str(100*self.set_accuracy_map[subset]) + "%\n")
+        print("Feature set " + "{}".format(best_set) + " was best, accuracy is " + str(100*self.set_accuracy_map[best_set]) + "%\n\n")
         # Clear the map to get rid of the non-chosen new feature subsets
         self.set_accuracy_map.clear()
