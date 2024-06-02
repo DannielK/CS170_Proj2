@@ -63,6 +63,7 @@ def read_file(file_name, features_list):
 def forward_selection(problem: Problem, filename) -> tuple[tuple, float]:
     # Create local alias
     accuracy_map = problem.set_accuracy_map
+    current_accuracy = 0.0
     while len(problem.features_remaining):
         # Generate new subset
         problem.new_subsets("Forward")
@@ -73,7 +74,8 @@ def forward_selection(problem: Problem, filename) -> tuple[tuple, float]:
             for feature in subset:
                 features_list.append(feature)
             data_map = read_file(filename, features_list)
-            problem.set_accuracy_map[subset] = leave_one_out_validator(data_map)
+            accuracy = leave_one_out_validator(data_map)
+            problem.set_accuracy_map[subset] = accuracy
 
         # Get the best subset and the chosen feature
         best_subset = max(accuracy_map, key=accuracy_map.get)
@@ -81,12 +83,15 @@ def forward_selection(problem: Problem, filename) -> tuple[tuple, float]:
             if chosen_feature in best_subset:
                 break
 
+        # Check if accuracy decreased
+        new_accuracy = problem.set_accuracy_map[best_subset]
+        decreased = new_accuracy < current_accuracy
+        current_accuracy = new_accuracy
+
         # Select the feature
         problem.select_feature(best_subset, chosen_feature, "Forward")
+        if decreased:
+            print("(Warning, Accuracy has decreased!)\n\n")
 
-    # Get the best set and check if the accuracy decreased
-    chosen_set = max(problem.chosen_sets, key=lambda chosen_set: chosen_set[1])
-    if problem.chosen_sets.index(chosen_set) < len(problem.chosen_sets) - 1:
-        print("(Warning, Accuracy has decreased!)")
-
-    return chosen_set
+    # return the subset with the best accuracy
+    return max(problem.chosen_sets, key=lambda chosen_set: chosen_set[1])
