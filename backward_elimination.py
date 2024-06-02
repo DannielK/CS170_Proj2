@@ -71,7 +71,7 @@ def read_file(file_name, features_list):
     # {instance_index: [class_lable, feature1, feature2, ...]}
     return data_map
 
-def backward_elimination(prob: Problem):
+def backward_elimination(prob: Problem, filename):
 
     while len(prob.features_remaining) > 1:
         #create new subsets
@@ -83,7 +83,7 @@ def backward_elimination(prob: Problem):
             features_list = []
             for feature in subset:
                 features_list.append(feature)
-            data_map = read_file("CS170_Spring_2024_Large_data__27.txt", features_list)
+            data_map = read_file(filename, features_list)
 
             # perform leave one out validation
             result = leave_one_out_validator(data_map)
