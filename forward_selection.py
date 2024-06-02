@@ -1,7 +1,5 @@
 from problem import Problem
 from leave_one_out_validator import leave_one_out_validator
-import random
-
 
 def read_file(file_name, features_list):
     data_map = {}

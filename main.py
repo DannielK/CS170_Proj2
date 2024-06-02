@@ -71,6 +71,6 @@ overall_time_taken = overall_end_time - overall_start_time
 print("Time taken: " + str(overall_time_taken) + " seconds\n")
 
 if default_rate_result > 100*solution[1]:
-    print("Default rate accuracy: " + str(default_rate_result) + "was higher than the algorithm's solution: " + "{}".format(solution[0]) + ", which has an accuracy of " + str(solution[1]) + "%")
+    print("Default rate accuracy: " + str(default_rate_result) + "% was higher than the algorithm's solution: " + "{}".format(solution[0]) + ", which has an accuracy of " + str(100*solution[1]) + "%")
 else:
     print("Finished search!! The best feature subset is " + "{}".format(solution[0]) + ", which has an accuracy of " + str(100*solution[1]) + "%")
