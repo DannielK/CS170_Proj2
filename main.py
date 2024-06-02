@@ -26,6 +26,21 @@ algo_functions = {
 while chosen_alg not in algo_functions:
     chosen_alg = int(input("Invalid input, type 1 or 2"))
 
+# list of dataset files
+file_list = {
+    1: "CS170_Spring_2024_Small_data__27.txt",
+    2: "CS170_Spring_2024_Large_data__27.txt",
+    3: "small-test-dataset-1.txt",
+    4: "large-test-dataset-1.txt",
+}
+
+print("\nType the number of the dataset file you want to run.\n"
+        "\tCS170_Spring_2024_Small_data__27\n"
+        "\tCS170_Spring_2024_Large_data__27\n"
+        "\tsmall-test-dataset-1\n"
+        "\tlarge-test-dataset-1.txt\n")
+file_name = int(input())
+
 # print the random starting accuracy
 random_accuracy = round(random.uniform(0,100),1)
 print("\n\n\nUsing no features and \"random\" evaluation, I get an accuracy of " + str(random_accuracy) + "%\n"
@@ -33,9 +48,9 @@ print("\n\n\nUsing no features and \"random\" evaluation, I get an accuracy of "
 
 problem = Problem(feature_num)
 
-solution = algo_functions[chosen_alg](problem)
+solution = algo_functions[chosen_alg](problem, file_list[file_name])
 
-if random_accuracy > solution[1]:
+if random_accuracy > 100*solution[1]:
     print("Initial random accuracy: " + str(random_accuracy) + "was higher than the algorithm's solution: " + "{}".format(solution[0]) + ", which has an accuracy of " + str(solution[1]) + "%")
 else:
-    print("Finished search!! The best feature subset is " + "{}".format(solution[0]) + ", which has an accuracy of " + str(solution[1]) + "%")
+    print("Finished search!! The best feature subset is " + "{}".format(solution[0]) + ", which has an accuracy of " + str(100*solution[1]) + "%")
