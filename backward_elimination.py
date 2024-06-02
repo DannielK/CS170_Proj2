@@ -57,6 +57,10 @@ def read_file(file_name, features_list):
 
 def backward_elimination(prob: Problem, filename):
 
+    # Variable to keep track if accuracy decreases after an iteration
+    prev_highest_score = 0
+    decreased = False
+
     while len(prob.features_remaining) > 1:
         #create new subsets
         prob.new_subsets("backward")
@@ -81,6 +85,11 @@ def backward_elimination(prob: Problem, filename):
                 highest_score = prob.set_accuracy_map[subset]
                 best_subset = subset
 
+        if(prev_highest_score > highest_score):
+            decreased = True
+        
+        prev_highest_score = highest_score
+
         # Find feature to remove
         chosen_feature = 0
         for feature in prob.features_remaining:
@@ -89,14 +98,16 @@ def backward_elimination(prob: Problem, filename):
 
         #Select feature
         prob.select_feature(best_subset, chosen_feature, "backward")
+
+        if decreased:
+            print("Warning! Accuracy has decreased! Continuing to search!\n")
+            decreased = False
     
     #loop through chosen_features and find the subset with highest accuracy score
     final_highest_score = 0
     final_best_subset = ()
     final_best_subset_size = 1000
     for chosen in prob.chosen_sets:
-        if(final_highest_score > chosen[1]):
-            print("(Warning! Accuracy has decreased!)")
         if chosen[1] > final_highest_score:
             final_highest_score = chosen[1]
             final_best_subset = chosen[0]
