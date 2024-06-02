@@ -113,12 +113,19 @@ def backward_elimination(prob: Problem, filename):
     #loop through chosen_features and find the subset with highest accuracy score
     final_highest_score = 0
     final_best_subset = ()
+    final_best_subset_size = 1000
     for chosen in prob.chosen_sets:
         if(final_highest_score > chosen[1]):
             print("(Warning! Accuracy has decreased!)")
         if chosen[1] > final_highest_score:
             final_highest_score = chosen[1]
             final_best_subset = chosen[0]
+            final_best_subset_size = len(chosen[0])
+        elif 1000*chosen[1] == 1000*final_highest_score:
+            if final_best_subset_size > len(chosen[0]):
+                final_highest_score = chosen[1]
+                final_best_subset = chosen[0]
+                final_best_subset_size = len(chosen[0])
     
     
 
